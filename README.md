@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/images/logo-docfy-fundo.png" alt="Docfy" width="200"/>
+  <img src="public/images/logo-docfy-fundo.png" alt="Docfy" width="400"/>
 </p>
 
 O **Docfy** é um sistema gerenciador de arquivos desenvolvido para facilitar o armazenamento, organização, visualização e gerenciamento de documentos de forma centralizada e segura.
