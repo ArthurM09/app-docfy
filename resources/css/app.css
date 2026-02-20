@@ -1,3 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --auth-bg: #f4f8fc;
+        --auth-ink: #0f172a;
+        --auth-muted: #475569;
+        --auth-accent: #0b5cab;
+        --auth-accent-strong: #084a8a;
+    }
+
+    .auth-body {
+        font-family: "Figtree", sans-serif;
+        background: radial-gradient(circle at 10% 10%, #e6f4ff 0%, var(--auth-bg) 42%, #eef3f9 100%);
+        color: var(--auth-ink);
+    }
+}
+
+@layer components {
+    .auth-orb {
+        position: absolute;
+        border-radius: 9999px;
+        filter: blur(64px);
+        opacity: 0.28;
+        pointer-events: none;
+    }
+
+    .auth-orb--one {
+        width: 24rem;
+        height: 24rem;
+        left: -8rem;
+        top: -7rem;
+        background: #7dd3fc;
+    }
+
+    .auth-orb--two {
+        width: 20rem;
+        height: 20rem;
+        right: -5rem;
+        bottom: -5rem;
+        background: #a7f3d0;
+    }
+
+    .auth-grid-line {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.35;
+        background-image: linear-gradient(to right, rgba(148, 163, 184, 0.12) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
+        background-size: 44px 44px;
+    }
+}
